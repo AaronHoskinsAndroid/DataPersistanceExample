@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSharedPrefDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etUserInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Please enter value to store"
+        app:layout_constraintTop_toBottomOf="@id/tvSharedPrefDisplay"/>
+
+    <Button
+        android:id="@+id/btnStoreValueToPref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Store Value"
+        android:onClick="onClick"
+        app:layout_constraintTop_toBottomOf="@id/etUserInput"/>
+
+    <Button
+        android:id="@+id/btnInsertCars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Cars"
+        android:onClick="onClick"
+        app:layout_constraintTop_toBottomOf="@id/btnStoreValueToPref"/>
+
+    <Button
+        android:id="@+id/btnViewAllCars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Cars"
+        android:onClick="onClick"
+        app:layout_constraintTop_toBottomOf="@id/btnInsertCars"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
